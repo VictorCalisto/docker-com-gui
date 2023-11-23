@@ -49,9 +49,7 @@ RUN apt-get update && \
         unzip \
         vnstat \
         wget \
-        xz-utils
-RUN echo "**** install my packages ****" && \
-        apt-get install -qy --no-install-recommends ca-certificates \
+        xz-utils \
 		dbus-x11 \
 		libcurl4 \
 		libgtk-3-0 \
