@@ -12,5 +12,6 @@ services:
     volumes:
       - ./python:/python
     ports:
-      - "8080:3389"
+      - "3389:3389"
+      - "8080:8080"
     shm_size: "4gb"
