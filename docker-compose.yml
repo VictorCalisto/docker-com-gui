@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+
+  gui:
+    container_name: gui
+    build:
+      context: .
+      dockerfile: Dockerfile    
+    restart: always
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    volumes:
+      - .:/app
+    environment:
+      - FM_HOME=app
+      - START_DOCKER=true
+      - LC_ALL=pt_BR.UTF-8
